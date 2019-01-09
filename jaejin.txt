@@ -1,10 +1,26 @@
-졸릴 때 하는 커밋
-<<<<<<< HEAD
+졸릴 때 하는 커밋.
 
-역시 태주...굿굿..
-=======
 재진아 오늘 뭐먹었어 ? 
 맥북 이대로 괜찮은가 ! 
 재진아 맥북 은 죽은거니 ??
-태주의 함정카드 걸리지 않겠다 
->>>>>>> e5a5c2df2a5c60a32d7796a026d95d6b9ecbf4db
+태주의 함정카드 걸리지 않겠다
+
+모든 문제의 답은 한 문장으로
+Q. what is generic? 
+Ans.
+
+Q. what is method?
+Ans.
+
+Q. difference between function and method
+Ans.
+
+Q. how to implement inner interface?
+Ans.
+
+Q. what means <?>
+Ans.
+
+Q. 태주와 종현이 혈액형은?
+Ans.
+
