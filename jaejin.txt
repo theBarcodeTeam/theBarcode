@@ -7,20 +7,20 @@
 
 모든 문제의 답은 한 문장으로
 Q. what is generic? 
-Ans.
+Ans. 컴파일  타입 제한^^
 
 Q. what is method?
-Ans.
+Ans. 함수^^
 
 Q. difference between function and method
-Ans.
+Ans. 자바스크립트와 자바의 차이?ㅎㅎ
 
 Q. how to implement inner interface?
-Ans.
+Ans. 카톡 참고..
 
 Q. what means <?>
-Ans.
+Ans. <? extends Object>
 
 Q. 태주와 종현이 혈액형은?
-Ans.
+Ans. 매형?
 
