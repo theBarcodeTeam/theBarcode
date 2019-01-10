@@ -24,3 +24,10 @@ Ans. <? extends Object>
 Q. 태주와 종현이 혈액형은?
 Ans. 매형?
 
+Q. what is Thread?
+Ans.
+
+Q. What is Deamon Thread?
+Ans.
+
+
