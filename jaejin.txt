@@ -25,9 +25,10 @@ Q. 태주와 종현이 혈액형은?
 Ans. 매형?
 
 Q. what is Thread?
-Ans.
+Ans. 일꾼입니다
 
 Q. What is Deamon Thread?
-Ans.
+Ans. 비정규직 일꾼입니다
 
-
+Q. what is today dinner?
+Ans. 
