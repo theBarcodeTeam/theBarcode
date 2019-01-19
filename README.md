@@ -20,8 +20,9 @@ This is README.
         구글 지도에서 목적지 검색 - 지도에서 마우스 우클릭 - '이곳이 궁금한가요?' - 좌표 뜸
         2. http://www.gisdeveloper.co.kr/?p=2281
         leaflet 설명 잘 되어 있는 블로그
-	+
-	배경 Css 추가로 찾기 
+        +배경 Css 추가로 찾기 => 거점이 없어져서 leaflet 아예 안 넣게 됨
+        역할이 배경 css로 바뀜
+    
     * 종현(modal) 
 	1. 모달창 찾기 
 	-> 깃헙 참조 
