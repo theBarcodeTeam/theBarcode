@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  alert("OPEN THE BARCODE PAGE")
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
