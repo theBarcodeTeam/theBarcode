@@ -138,3 +138,17 @@ footer a:hover {
 textarea {
   resize: none;
 }
+
+
+/* youtube css */
+.youtubeWrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  margin-bottom: 30px;
+}
+.youtubeWrap iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
