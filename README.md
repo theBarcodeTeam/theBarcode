@@ -28,7 +28,11 @@
 	- 모달창 찾기 -> 깃헙 참조
 
 
-- 재진
+- 재진   
+    -Facebook embedded Posts
+     facebook 좋아요, 공유하기 버튼 
+     (Facebook for developers 사이트에서 api 참고)
+    -__TODO : index.html 에 적용하기, follow us 기능 넣어서 facebook페이지 연동시키기.
 
 01/26
 02/02
