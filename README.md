@@ -1,32 +1,34 @@
-This is README.
-<h1>This is Title</h1><br>
-# This is Title  
+# THE BARCODE PAGE
 
-<h2>This is Title</h2><br>
-## This is Title  
-
-
-
-
+## 일정기록
 01/12 기획회의, 역할분담
 	대쉬보드 / 태민
 	밴드소개 / 종현
 	유튜브 / 태민
 	컨택트 / 재진
 	위치 / 태주
-01/19 
-    * 태주(leaflet)
-        1. 지도 좌표 구하는 방법
-        구글 지도에서 목적지 검색 - 지도에서 마우스 우클릭 - '이곳이 궁금한가요?' - 좌표 뜸
-        2. http://www.gisdeveloper.co.kr/?p=2281
+01/19
+
+- __태민__
+ - 패키지 정리
+ - 유투브 영상 삽입
+	-  __TODO : carousel, 전체 css 확인(모바일, 사진크기 등) 적용__
+
+- __태주__(leaflet)
+ - 지도 좌표 구하는 방법
+ 		구글 지도에서 목적지 검색 - 지도에서 마우스 우클릭 - '이곳이 궁금한가요?' - 좌표 뜸
+ - http://www.gisdeveloper.co.kr/?p=2281
         leaflet 설명 잘 되어 있는 블로그
         +배경 Css 추가로 찾기 => 거점이 없어져서 leaflet 아예 안 넣게 됨
         역할이 배경 css로 바뀜
-    
-    * 종현(modal) 
-	1. 모달창 찾기 
-	-> 깃헙 참조 
+	 - __TODO : blueb 적용__
 
+
+- 종현(modal)
+	- 모달창 찾기 -> 깃헙 참조
+
+
+- 재진
 
 01/26
 02/02
@@ -35,13 +37,14 @@ This is README.
 
 
 
- ○할일(*난이도/ 담당)
-- SNS연동 ** / 재진
-- 모달 ** 종현
-- BootStrap, 구글 Matrial **
-- Map(leaflet) *** / 태주
-- 유튜브 영상 넣기 * / 태민
-- 배경 css (ex. 눈내리는 효과) **
+- 할일(/담당)
+ - SNS연동 / 재진
+ - 모달 종현
+ - BootStrap, 구글 Matrial 태민
+ - __[완]Map(leaflet) / 태주__
+ - __[완]유튜브 영상 넣기 / 태민__
+ - 유투브 좌우로 이벤트 / 태민
+ - 배경 css (ex. blueb) / 태주
 
 02/16 aws 시작, 도메인 구입
 02/23
