@@ -24,21 +24,28 @@
 	 - __TODO : blueb 적용__
 
 
-- 종현(modal)
+- __종현(modal)__
 	- 모달창 찾기 -> 깃헙 참조
    모달 은 하나로 만들어놓고 컨텐츠를 바꾸는 형태로 가야한다 .
-     함수만들어줄떄 매변 등록 등 
-     모달창 ui 나 material 구글 참고 해서 뭐가 있나 참고해서 
-     변경하기 
-     
+     함수만들어줄떄 매변 등록 등
+     모달창 ui 나 material 구글 참고 해서 뭐가 있나 참고해서
+     변경하기
 
-- 재진   
+
+- __재진__   
     -Facebook embedded Posts
-     facebook 좋아요, 공유하기 버튼 
+     facebook 좋아요, 공유하기 버튼
      (Facebook for developers 사이트에서 api 참고)
     -__TODO : index.html 에 적용하기, follow us 기능 넣어서 facebook페이지 연동시키기.
 
 01/26
+- __태민__
+
+- __태주__
+
+- __종현__
+
+- __재진__
 
 02/02 쉬는 날
 
