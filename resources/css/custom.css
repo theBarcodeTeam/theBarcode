@@ -148,6 +148,9 @@ textarea {
   font-style: italic;
 }
 
+.hide-font, .hide-font a, .hide-font a:hover {
+  color: #2d2d30;
+}
 
 /* youtube css */
 .youtubeWrap {
