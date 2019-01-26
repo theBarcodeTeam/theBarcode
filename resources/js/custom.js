@@ -31,16 +31,12 @@ $(document).ready(function(){
  
         // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-        var btn2 = document.getElementById("myBtn2");
-        var btn3 = document.getElementById("myBtn3");
-        var btn4 = document.getElementById("myBtn4");
-        var btn5 = document.getElementById("myBtn5");
-    
+      
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];            
     
     
-    var btn =document.attributes class="myBtn"
+    
     
  
         // When the user clicks on the button, open the modal 
