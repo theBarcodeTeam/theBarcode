@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="kr">
+	<head>
+	<meta charset="UTF-8">
+	<title>http://www.blueb.co.kr</title>
+
+<style rel="stylesheet">
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px);
+  z-index: 1;
+  font-size: 18vw;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+</style>
+</head>
+<body>
+
+
+<h1>BLUEB</h1>
+<canvas></canvas>
+
+<script type="text/javascript">
+"use strict";
+
+var canvas = document.querySelector('canvas');
+    //canvas 태그를 가져온다
+var ctx = canvas.getContext("2d");
+    //getContext 메소드의 존재 여부를 확인한다 (브라우저가 지원하는지)
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
+    //크기, 높이 지정
+    
+var dim = 8;
+    //흐린 정도
+var ratio = .43;
+    //비율
+var dimOffset = dim;
+var maxWidth = canvas.width / (dim * ratio);
+var maxHeight = canvas.height / dim;
+var fps = 30;
+    //초당 프레임
+var interval = 1000 / fps;
+    //간격
+var then = Date.now();
+    //?? 오늘 날짜가 왜 필요?
+
+ctx.font = "normal " + dim + "px Montserrat";
+
+function render() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //clearRect(영역, 크기) : 해당 영역을 지워준다
+  for (var i = 0; i < maxHeight; i++) {
+    ctx.fillText(randomString(maxWidth, "aA#!"), 0, i * dim + dimOffset);
+  } // 캔버스 height 1부터 끝까지 돌면서 영역을 글자로 채운다
+    
+}
+
+function randomString(length) {
+  var chars = arguments.length <= 1 || arguments[1] === undefined ? "aA#!" : arguments[1];
+    //arguments 배열의 길이가 1보다 작거나 undefined 면 "aA#!" 아니면 arguments[1]의 value
+  var mask = '';
+    //얘는 왜 필요하지?
+  if (chars.indexOf('a') > -1) mask += 'abcdefghijklmnopqrstuvwxyz';
+  if (chars.indexOf('A') > -1) mask += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (chars.indexOf('#') > -1) mask += '0123456789';
+  if (chars.indexOf('!') > -1) mask += '~`!@#$%^&*()_+-={}[]:";\'<>?,./|\\';
+  var result = '';
+  for (var i = length; i > 0; --i) {
+    result += mask[Math.floor(Math.random() * mask.length)];
+  }return result;
+}
+    //글자 골고루 리턴해주는 메소드
+
+function update() {
+  var now = Date.now();
+    //지금 날짜
+  var delta = now - then;
+    // 아까 잡아온 날짜에서 지금 날짜 빼
+  if (delta >= interval) {
+    then = now - delta % interval;
+    render();
+  }
+  window.requestAnimationFrame(update);
+}
+    
+    
+window.requestAnimationFrame(update);
+</script>
+</body>
+</html>
