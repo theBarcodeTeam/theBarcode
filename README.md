@@ -55,7 +55,8 @@
 
 
 - __재진__
-	-
+	-facebook embedded Posts 구현 작업. 
+        (코드 얻는 방법 - 자기가 embedded 하고 싶은 public post를 옵션에서 embedded설정 클릭 후 advanced settings 들어가서 코드받는다. 나머지 코드들도 facebook for developer 에서 받을 수 있다.)
 	- __TODO__ : facebook notice 구역 추가
 
 
