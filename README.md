@@ -45,8 +45,9 @@
 
 
 - __태주__
-	-
+	-   움직이는 css 의 js코드 분석(newInformation에 추가했음) , canvas 태그 공부(어렵다)
 	- __TODO__ : 맨밑에 지지직 로고, 콘솔에 찍히는 오류 해결, 메일링 브라우저단에서 가능한지 확인
+                 태민에게 알려주기 아이콘 만들어라
 
 
 - __종현__
@@ -55,7 +56,8 @@
 
 
 - __재진__
-	-
+	-facebook embedded Posts 구현 작업. 
+        (코드 얻는 방법 - 자기가 embedded 하고 싶은 public post를 옵션에서 embedded설정 클릭 후 advanced settings 들어가서 코드받는다. 나머지 코드들도 facebook for developer 에서 받을 수 있다.)
 	- __TODO__ : facebook notice 구역 추가
 
 
