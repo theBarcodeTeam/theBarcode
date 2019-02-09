@@ -79,7 +79,7 @@
 
 - __종현__
 	-
-	- __TODo__ :
+	- __TODo__ :contant 수정 하기 
 
 - __재진__
 	-facebook sns post  위치 변경(center)
