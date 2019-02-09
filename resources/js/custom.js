@@ -24,8 +24,8 @@ $(document).ready(function(){
     });
   });
 
-  ovf = $(".overflow")
-  slider = $(".scroll-hider")
+  ovf = $(".overflow")[0]
+  slider = $(".scroll-hider")[0]
   winResize();
   $(window).bind({resize: winResize, scroll: winScroll});
 
