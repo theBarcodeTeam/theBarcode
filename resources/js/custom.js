@@ -1,3 +1,4 @@
+var ovf, slider;
 $(document).ready(function(){
 
   // Initialize Tooltip
@@ -22,28 +23,41 @@ $(document).ready(function(){
       window.location.hash = hash;
     });
   });
-    
-	//$(window).scroll(function() {
-        
+
+  ovf = $(".overflow")
+  slider = $(".scroll-hider")
+  winResize();
+  $(window).bind({resize: winResize, scroll: winScroll});
+
+  // $(window).scroll(function() {
+
         // taemin workspace
-        
-        
+
+
         // taemin workspace
-        
-        
-        
+
+
+
         // jh workspace
-		// var value = $(this).scrollTop();	
+		// var value = $(this).scrollTop();
 
 		// var hoge1 = value * 0.001 + 0.00003;
 		// if (hoge1 > 0.01) {
 		//	$('#contact').css('transform', 'scale(' + hoge1 + ')');
 		//}
-    
-        
+
+
   //  });
-   
-    
-    
+
+
+
 })
 
+function winResize(){
+    ovf.style.top = slider.offsetHeight + "px";
+}
+
+function winScroll(){
+    var op = 1 - (window.pageYOffset / slider.offsetHeight);
+    slider.style.opacity = op;
+}
