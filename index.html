@@ -11,6 +11,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="resources/css/custom.css" rel="stylesheet" type="text/css">
+<style>
+        .clear {
+            clear: both;
+        }
+
+        #facebook_connection {
+            width: 930px;
+            height: 190px;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+
+        #sns_board {
+            width: 10px;
+            height: 180px;
+            border: 2px solid silver;
+            float: right;
+        }
+    </style>
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -262,50 +281,51 @@
   <br>
 
      <div id="facebook_connection">
-      <!-- Facebook embedded Posts-->
-    <!--Load JavaScript SDK-->
-     <!-- 임시 포스트  -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+        <!-- 임시 포스트  -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
 
-    <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
-        <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
-            <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
-        </blockquote>
+        <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
+            <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
+                <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
+            </blockquote>
+
+        </div>
+        <!--  facebook 좋아요, 공유하기 버튼  -->
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your like button code -->
+        <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+        </div>
+        <!--    <div id="fb-root"></div>-->
+        <div class="clear"></div>
+        <span id="sns_board">
+
+
+        </span>
+        <div class="clear"></div>
     </div>
-
-    <!--  facebook 좋아요, 공유하기 버튼  -->
-
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- Your like button code -->
-    <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
-    </div>
-    <!--    <div id="fb-root"></div>-->
-      </div>
-
-</div>
-
 
 <img src="./resources/img/meet.JPG" class="img-responsive" style="width:100%; filter: grayscale(70%);">
 <!-- BandName -->
