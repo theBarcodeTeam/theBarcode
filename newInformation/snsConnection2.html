@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+        #facebook_connection {
+            width: 1000px;
+            height: 500px;
+            border: 2px solid red;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- 임시 포스트  -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <div id="facebook_connection">
+        <!-- 임시 포스트  -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
 
-    <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
-        <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
-            <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
-        </blockquote>
+        </script>
 
+        <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
+            <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
+                <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
+            </blockquote>
+
+        </div>
+        <!--  facebook 좋아요, 공유하기 버튼  -->
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+        </script>
+
+        <!-- Your like button code -->
+        <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+        </div>
+        <!--    <div id="fb-root"></div>-->
     </div>
-    <!--  facebook 좋아요, 공유하기 버튼  -->
-
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <!-- Your like button code -->
-    <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
-    </div>
-    <!--    <div id="fb-root"></div>-->
-
 </body>
+
 </html>
