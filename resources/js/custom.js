@@ -29,7 +29,7 @@ $(document).ready(function(){
   winResize();
   $(window).bind({resize: winResize, scroll: winScroll});
 
-  $(window).scroll(function() {
+  // $(window).scroll(function() {
 
         // taemin workspace
 
@@ -39,15 +39,15 @@ $(document).ready(function(){
 
 
         // jh workspace
-		var value = $(this).scrollTop();
+		// var value = $(this).scrollTop();
 
-		var hoge1 = value * 0.001 + 0.00003;
-		if (hoge1 > 0.01) {
-			$('#contact').css('transform', 'scale(' + hoge1 + ')');
-		}
+		// var hoge1 = value * 0.001 + 0.00003;
+		// if (hoge1 > 0.01) {
+		//	$('#contact').css('transform', 'scale(' + hoge1 + ')');
+		//}
 
 
-    });
+  //  });
 
 
 
