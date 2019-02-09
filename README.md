@@ -51,12 +51,12 @@
 
 
 - __종현__
-	- 
+	-
 	- __TODo__ : MODAL 추가작업 오류해결
 
 
 - __재진__
-	-facebook embedded Posts 구현 작업. 
+	-facebook embedded Posts 구현 작업.
         (코드 얻는 방법 - 자기가 embedded 하고 싶은 public post를 옵션에서 embedded설정 클릭 후 advanced settings 들어가서 코드받는다. 나머지 코드들도 facebook for developer 에서 받을 수 있다.)
 	- __TODO__ : facebook notice 구역 추가
 
@@ -64,6 +64,24 @@
 02/02 쉬는 날
 
 02/09 aws 발표
+- __태민__
+	-
+	- __TODO__ :
+
+
+- __태주__
+	-
+	- __TODO__ :
+
+
+- __종현__
+	-
+	- __TODo__ :
+
+- __재진__
+	-
+	- __TODO__ :
+
 02/16 (까지 페이지 작업 완료)
 
 
