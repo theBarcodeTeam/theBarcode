@@ -25,6 +25,14 @@ $(document).ready(function(){
     
 	$(window).scroll(function() {
         
+        // taemin workspace
+        
+        
+        // taemin workspace
+        
+        
+        
+        // jh workspace
 		var value = $(this).scrollTop();	
 
 		var hoge1 = value * 0.001 + 0.00003;
@@ -32,6 +40,7 @@ $(document).ready(function(){
 			$('#contact').css('transform', 'scale(' + hoge1 + ')');
 		}
     
+        
     });
    
     
