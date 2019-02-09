@@ -23,11 +23,19 @@ $(document).ready(function(){
     });
   });
     
+    $(function() {
+	$(window).scroll(function() {
+		var value = $(this).scrollTop();	
+
+		var hoge1 = value * 0.001 + 0.0003;
+		if (hoge1 > 9) {
+			$('#contact').css('transform', 'scale(' + hoge1 + ')');
+		}
     
+    });
     
-    
-    
-    
+    }); 
     
     
 })
+
