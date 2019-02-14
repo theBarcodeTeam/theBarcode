@@ -1,33 +1,69 @@
 var ovf, slider;
 $(document).ready(function(){
-
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
+  //#####################################################//
+  //################### bootstrap basic #################//
+  //####################################################//
+  $('[data-toggle="tooltip"]').tooltip();   // Initialize Tooltip
 
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
+    event.preventDefault();   // Prevent default anchor click behavior
+    var hash = this.hash;     // Store hash
+    $('html, body').animate({ // animate scroll
       scrollTop: $(hash).offset().top
     }, 900, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
   });
 
+
+  //#####################################################//
+  //###################### parallex #####################//
+  //####################################################//
+  var scene_vocal = $('#scene_vocal')[0];
+  var parallaxInstance_vocal = new Parallax(scene_vocal, {
+    hoverOnly : true
+  });
+  parallaxInstance_vocal.friction(0.2, 0.2);
+
+  var scene_keyboard = $('#scene_keyboard')[0];
+  var parallaxInstance_keyboard = new Parallax(scene_keyboard, {
+    hoverOnly : true
+  });
+  parallaxInstance_keyboard.friction(0.2, 0.2);
+
+  var scene_guitar = $('#scene_guitar')[0];
+  var parallaxInstance_guitar = new Parallax(scene_guitar, {
+    hoverOnly : true
+  });
+  parallaxInstance_guitar.friction(0.2, 0.2);
+
+  var scene_drum = $('#scene_drum')[0];
+  var parallaxInstance_drum = new Parallax(scene_drum, {
+    hoverOnly : true
+  });
+  parallaxInstance_drum.friction(0.2, 0.2);
+
+  var scene_bass = $('#scene_bass')[0];
+  var parallaxInstance_bass = new Parallax(scene_bass, {
+    hoverOnly : true
+  });
+  parallaxInstance_bass.friction(0.2, 0.2);
+
+  var parallax_container = document.getElementById('parallax_container');
+  var parallaxInstance = new Parallax(parallax_container, {
+    calibrateX : true,
+    calibrateY : false
+  });
+  parallaxInstance.friction(0.2, 0.2);
+
+
   ovf = $(".overflow")[0]
-  slider = $(".scroll-hider")[0]
+  slider = $(".scroll_hider")[0]
   winResize();
   $(window).bind({resize: winResize, scroll: winScroll});
+
+
 
   // $(window).scroll(function() {
 

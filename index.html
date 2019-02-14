@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="./resources/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/img/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link href="resources/css/custom.css" rel="stylesheet" type="text/css">
+    <link href="resources/css/base.css" rel="stylesheet" type="text/css">
     <style>
         .clear {
             clear: both;
@@ -30,7 +34,6 @@
             float: right;
         }
     </style>
-
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -68,7 +71,7 @@
         </div>
     </nav>
 
-    <div id="myCarousel" class="carousel slide scroll-hider" data-ride="carousel">
+    <section id="myCarousel" class="carousel slide scroll-hider first" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -80,35 +83,20 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="./resources/img/members1.jpg" alt="New York" width="1200" height="700">
-                <div class="carousel-caption">
+                <img src="./resources/img/members1.jpg" alt="Main_members_img">
+                <!-- <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>The atmosphere in New York is lorem ipsum.</p>
-                </div>
+                </div> -->
             </div>
-
             <div class="item">
-                <img src="./resources/img/keyboard1.jpg" alt="Chicago" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago - A night we won't forget.</p>
-                </div>
+                <img src="./resources/img/keyboard1.jpg" alt="Main_keyboard_img">
             </div>
-
             <div class="item">
-                <img src="./resources/img/colla1.jpg" alt="Los Angeles" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3>LA</h3>
-                    <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
-                </div>
+                <img src="./resources/img/colla1.jpg" alt="Main_colla_img">
             </div>
-
             <div class="item">
-                <img src="./resources/img/vocal1.JPG" alt="Chicago" width="1200" height="700">
-                <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago - A night we won't forget.</p>
-                </div>
+                <img src="./resources/img/vocal1.JPG" alt="Main_vocal_img">
             </div>
         </div>
 
@@ -122,64 +110,77 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </section>
+
+    <!-- <div id="scene">
+      <div data-depth="0.2">My first Layer!</div>
+      <div data-depth="0.6">My second Layer!</div>
+    </div> -->
+
 
     <!-- Container (The Band Section) -->
-    <div id="band" class="container text-center overflow">
-
-
+    <section id="band" class="container text-center overflow">
         <h3>THE Barcode</h3>
-        <p><em> welcome</em></p>
-        <br>
+        <p class="mB50"><em>Band THE Barcode Members</em></p>
 
         <div class="row">
             <!--  보컬-->
-            <div class="">
-                <p class="text-center"><strong>보컬</strong></p><br>
-                <a href="#" data-target="#myModal1" data-toggle="modal">
-                    <img src="./resources/img/vocal1.JPG" class="" id="myBtn" alt="Random Name" width="255px" height="255px">
-                </a>
-            </div>
+            <a id="scene_vocal" href="#" data-target="#myModal1" data-toggle="modal">
+              <div class="person person-left" data-depth="1.6">
+                <img src="./resources/img/vocal1.JPG" class="" id="myBtn" alt="Random Name" width="800" height="500">
+                <div class="person-text">
+                  <h1>Vocal</h1>
+                  <h2 class="person-name">계승</h2>
+                </div>
+              </div>
+            </a>
+
             <!-- 키보드 -->
-            <div class="">
-                <p class="text-center"><strong>키보드</strong></p><br>
-                <a href="#" data-target="#myModal2" data-toggle="modal">
-                    <img src="./resources/img/keyboard1.JPG" class="" alt="Random Name" width="255px" height="255px">
-                </a>
-                <div class="pict" id="edouard" data-index="0"></div>
-            </div>
+            <a id="scene_keyboard" href="#" data-target="#myModal1" data-toggle="modal">
+              <div class="person person-right" data-depth="1.6">
+                <img src="./resources/img/keyboard1.JPG" class="" id="myBtn" alt="Random Name" width="800" height="500">
+                <div class="person-text">
+                  <h1>KeyBoard</h1>
+                  <h2 class="person-name">사락</h2>
+                </div>
+              </div>
+            </a>
 
             <!-- 기타 -->
-            <div class="">
-                <p class="text-center"><strong>기타</strong></p><br>
-                <a href="#" data-target="#myModal3" data-toggle="modal">
-                    <img src="./resources/img/guitar1.JPG" class="" alt="Random Name" width="255px" height="255px">
-                </a>
-            </div>
-
+            <a id="scene_guitar" href="#" data-target="#myModal1" data-toggle="modal">
+              <div class="person person-left" data-depth="1.6">
+                <img src="./resources/img/guitar1.jpg" class="" id="myBtn" alt="Random Name" width="800" height="500">
+                <div class="person-text">
+                  <h1>Electronic Guitar</h1>
+                  <h2 class="person-name">제이누</h2>
+                </div>
+              </div>
+            </a>
 
             <!--드럼  -->
-            <div class="">
-                <p class="text-center"><strong>드럼</strong></p><br>
-                <a href="#" data-target="#myModal4" data-toggle="modal">
-                    <img src="./resources/img/drum1.JPG" class="" alt="Random Name" width="255px" height="255px">
-                </a>
-
-            </div>
-
-
+            <a id="scene_drum" href="#" data-target="#myModal1" data-toggle="modal">
+              <div class="person person-right" data-depth="1.6">
+                <img src="./resources/img/drum1.JPG" class="" id="myBtn" alt="Random Name" width="800" height="500">
+                <div class="person-text">
+                  <h1>Drum / Percussion</h1>
+                  <h2 class="person-name">혁기</h2>
+                </div>
+              </div>
+            </a>
 
             <!-- 베이스  -->
-            <div class="">
-                <p class="text-center"><strong>베이스</strong></p><br>
-                <a href="#" data-target="#myModal5" data-toggle="modal">
-                    <img src="./resources/img/base1.JPG" class="" alt="Random Name" width="255px" height="255px">
-                </a>
+            <a id="scene_bass" href="#" data-target="#myModal1" data-toggle="modal">
+              <div class="person person-left" data-depth="1.6">
+                <img src="./resources/img/bass1.JPG" class="" id="myBtn" alt="Random Name" width="800" height="500">
+                <div class="person-text">
+                  <h1>Electronic Bass</h1>
+                  <h2 class="person-name">승혁</h2>
+                </div>
+              </div>
+            </a>
 
-            </div>
             <!--베이스 모달-->
             <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -197,9 +198,7 @@
                 </div>
             </div>
         </div>
-
-
-    </div>
+    </section>
     <!-- 멤버 소개 종료 -->
 
 
@@ -219,7 +218,7 @@
   </div>
 </div> -->
 
-    <div id="youtube" class="bg-1 carousel slide" data-ride="carousel">
+    <section id="youtube" class="bg-1 carousel slide" data-ride="carousel">
 
         <div class="container">
             <h3 class="text-center">YOUTUBE</h3>
@@ -257,14 +256,14 @@
         </div>
         <!-- Indicators -->
 
-    </div>
+    </section>
 
 
 
     <!-- Container (Contact Section) -->
 
 
-    <div id="contact" class="container" style=" background-image: url(resources/img/ny.jpg);">
+    <section id="contact" class="container" style=" background-image: url(resources/img/ny.jpg);">
 
         <h1 class="text-center" style="font-size: 100pt;">Contact</h1>
         <p class="text-center" style="font-size: 50pt;"><em>-We love our fans!-</em></p>
@@ -277,7 +276,7 @@
 
 
 
-    </div>
+    </section>
     <br>
 
     <div id="facebook_connection">
