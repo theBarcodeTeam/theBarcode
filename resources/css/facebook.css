@@ -4,7 +4,7 @@
 
         #facebook_connection {
             width: 510px;
-            height: 190px;
+/*            height: 190px;*/
 /*            border: 2px solid red;*/
             margin: 0 auto;
         }
@@ -15,3 +15,9 @@
             border: 2px solid silver;
             float: right;
         }
+        
+/*
+        #facebook div {
+            margin: auto 0;
+        }
+*/
