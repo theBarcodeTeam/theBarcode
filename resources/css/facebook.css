@@ -1,0 +1,17 @@
+        .clear {
+            clear: both;
+        }
+
+        #facebook_connection {
+            width: 510px;
+            height: 190px;
+/*            border: 2px solid red;*/
+            margin: 0 auto;
+        }
+
+        #sns_board {
+            width: 10px;
+            height: 180px;
+            border: 2px solid silver;
+            float: right;
+        }
