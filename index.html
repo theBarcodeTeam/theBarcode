@@ -306,32 +306,38 @@
 
     <div id="contact" class="container">
         <h3 class="text-center barcordFont">Contact</h3>
-        <p class="text-center"><em>We love our fans!</em></p>
-
+        <div class="text-center">
+        <p style="font-size: 15px"><span class="glyphicon glyphicon-map-marker"></span>seoul, Korea</p><br>
+        <p style="font-size: 15px"><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p><br>
+        <p style="font-size: 15px"><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p><br>
+        
+        </div>
+        
+        <h1  style="font-size: 30px"class="text-center"><em>Send E-mail</em></h1>
+          
         <div class="row">
-            <div class="col-md-2">
-                <p>The &nbsp; &nbsp;BARCODE</p><br><br>
-                <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p><br>
-                <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p><br>
-                <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p><br>
-            </div>
+           
+              
+             
+            
             <form class="gform pure-form pure-form-stacked" method="POST" data-email="kwonhoe1121@gmail.com" action="https://script.google.com/macros/s/AKfycbxWvhniGJrt2POdFRjUPhY_NMbKtcomuQCE52YsQ2IGq65erbI/exec">
                 <!-- data-email속에 넣고자 하는 이메일 넣기 -->
 
-                <div class="col-md-8" id="star">
+                <div class="col-md-12" id="star">
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            <input class="form-control" id="name" name="name" placeholder="이름" type="text" required>
                         </div>
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
                         </div>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="적고싶은말을 적어주세요." rows="5"></textarea>
                     <br>
                     <div class="row">
                         <div class="col-md-12 form-group">
-                            <button class="btn pull-right" type="submit">Send</button>
+                            <button class="btn pull-right" type="submit">Send</button><br>
+                
                         </div>
                     </div>
                 </div>
@@ -341,6 +347,7 @@
                 <div class="thankyou_message" style="display:none;">
                     <h2><em>Thanks</em></h2>
                 </div>
+                
 
             </form>
 
