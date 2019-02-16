@@ -262,21 +262,54 @@
 
     <!-- Container (Contact Section) -->
 
+ 
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
 
-    <section id="contact" class="container" style=" background-image: url(resources/img/ny.jpg);">
+  <div class="row">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+ <form class="gform pure-form pure-form-stacked" method="POST" data-email="kjh4015@gmail.com"
+  action="https://script.google.com/macros/s/AKfycbxWvhniGJrt2POdFRjUPhY_NMbKtcomuQCE52YsQ2IGq65erbI/exec">
+    <!-- change the form action to your script url -->
 
-        <h1 class="text-center" style="font-size: 100pt;">Contact</h1>
-        <p class="text-center" style="font-size: 50pt;"><em>-We love our fans!-</em></p>
+        <div class="col-md-8" id="star">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <!-- 메일 전송후 뜨는 글  -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em></h2>
+    </div>
 
+  </form>
 
-        <p class="text-center" style="font-size: 35pt;">Fan? Drop a note.</p>
-        <p class="text-center" style="font-size: 35pt;"><span class="glyphicon glyphicon-map-marker"></span>한국</p>
-        <p class="text-center" style="font-size: 35pt;"><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-        <p class="text-center" style="font-size: 35pt;"><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="resources/js/form-submission-handler.js"></script>
 
-
-
-    </section>
+  </div>
+  <br>
+</div>
     <br>
 
     <div id="facebook_connection">
