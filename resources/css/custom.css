@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
+
 body {
   font: 400 15px/1.8 Lato, sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: #777;
 }
+
+.boldFont{
+    font-weight: 900;
+}
+
+.barcordFont{
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 40px;
+}
+
+
 h3, h4 {
   margin: 10px 0 30px 0;
   letter-spacing: 10px;
