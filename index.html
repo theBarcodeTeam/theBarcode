@@ -13,27 +13,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="resources/js/form-submission-handler.js"></script>
     <link href="resources/css/custom.css" rel="stylesheet" type="text/css">
     <link href="resources/css/base.css" rel="stylesheet" type="text/css">
-    <style>
-        .clear {
-            clear: both;
-        }
-
-        #facebook_connection {
-            width: 930px;
-            height: 190px;
-            border: 2px solid red;
-            margin: 0 auto;
-        }
-
-        #sns_board {
-            width: 10px;
-            height: 180px;
-            border: 2px solid silver;
-            float: right;
-        }
-    </style>
+    <link href="resources/css/facebook.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -53,6 +37,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#facebook">FACEBOOK</a></li>
                     <li><a href="#band">THE BARCODE</a></li>
                     <li><a href="#youtube">YOUTUBE</a></li>
                     <li><a href="#contact">CONTACT</a></li>
@@ -116,6 +101,62 @@
       <div data-depth="0.2">My first Layer!</div>
       <div data-depth="0.6">My second Layer!</div>
     </div> -->
+    
+<section id="facebook" class="bg-1 carousel slide" data-ride="carousel">
+   <div class="container">
+     <h3 class="text-center">FACEBOOK</h3>
+     <p class="text-center">THE BARCODE FACEBOOK NOTICE</p>
+     <div id="facebook_connection">
+        <!-- 임시 포스트  -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
+            <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
+                <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
+            </blockquote>
+
+        </div>
+        <!--  facebook 좋아요, 공유하기 버튼  -->
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!-- Your like button code -->
+        <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
+        </div>
+        <!--    <div id="fb-root"></div>-->
+<!--
+        <div class="clear"></div>
+        <span id="sns_board">
+
+
+        </span>
+        <div class="clear"></div>
+-->
+      </div>
+    </div>
+</section>
+
 
 
     <!-- Container (The Band Section) -->
@@ -268,15 +309,15 @@
   <p class="text-center"><em>We love our fans!</em></p>
 
   <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    <div class="col-md-2">
+      <p>The  &nbsp; &nbsp;BARCODE</p><br><br>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p><br>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p><br>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p><br>
     </div>
- <form class="gform pure-form pure-form-stacked" method="POST" data-email="kjh4015@gmail.com"
+ <form class="gform pure-form pure-form-stacked" method="POST" data-email="kwonhoe1121@gmail.com"
   action="https://script.google.com/macros/s/AKfycbxWvhniGJrt2POdFRjUPhY_NMbKtcomuQCE52YsQ2IGq65erbI/exec">
-    <!-- change the form action to your script url -->
+    <!-- data-email속에 넣고자 하는 이메일 넣기 -->
 
         <div class="col-md-8" id="star">
       <div class="row">
@@ -304,60 +345,12 @@
 
   </form>
 
-  <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" src="resources/js/form-submission-handler.js"></script>
+
 
   </div>
   <br>
 </div>
     <br>
-
-    <div id="facebook_connection">
-        <!-- 임시 포스트  -->
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <div class="fb-post" data-href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" data-width="500" data-show-text="true">
-            <blockquote cite="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381" class="fb-xfbml-parse-ignore">
-                <p></p><a href="https://www.facebook.com/people/&#xad8c;&#xc7ac;&#xc9c4;/100033507632381"></a> <a href="https://www.facebook.com/permalink.php?story_fbid=100776551049266&amp;id=100033507632381"></a>
-            </blockquote>
-
-        </div>
-        <!--  facebook 좋아요, 공유하기 버튼  -->
-
-        <!-- Load Facebook SDK for JavaScript -->
-        <div id="fb-root"></div>
-        <script>
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = 'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2';
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>
-
-        <!-- Your like button code -->
-        <div class="fb-like" data-href="https://www.facebook.com/bandthebarcode/" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true">
-        </div>
-        <!--    <div id="fb-root"></div>-->
-        <div class="clear"></div>
-        <span id="sns_board">
-
-
-        </span>
-        <div class="clear"></div>
-    </div>
 
     <img src="./resources/img/meet.JPG" class="img-responsive" style="width:100%; filter: grayscale(70%);">
     <!-- BandName -->
