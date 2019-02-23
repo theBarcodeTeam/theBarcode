@@ -3,10 +3,11 @@
         }
 
         #facebook_connection {
-            width: 510px;
+            width: 355px;
 /*            height: 190px;*/
 /*            border: 2px solid red;*/
             margin: 0 auto;
+            margin-top: 50px;
         }
 
         #sns_board {
