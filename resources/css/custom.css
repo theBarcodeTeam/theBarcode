@@ -127,6 +127,12 @@ h3, h4 {
     width: 300px;
     height: 400px;
   }
+  #CBandName{
+    font-size: 47.1px;
+  } 
+  .footerContent{
+    font-size: 8px;
+  }
 }
 .bg-1 {
   background: #2d2d30;
@@ -287,4 +293,21 @@ textarea {
 
 footer{
     padding: 0px;
+}
+
+.up-arrow{
+    position: absolute;
+}
+
+#ourGit{
+    margin: 0px;
+}
+
+.footerContent{
+    position: relative;
+    top: -100px;
+}
+
+.up-arrow{
+    z-index: 9999;
 }
