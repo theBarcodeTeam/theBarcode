@@ -117,6 +117,7 @@ h3, h4 {
   .person img {
     width: 300px;
     height: 400px;
+    margin-bottom : 0vh;
   }
   #facebook .fb_iframe_widget iframe{
     width: 300px;
